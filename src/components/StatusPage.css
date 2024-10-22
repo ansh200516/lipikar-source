@@ -1,0 +1,28 @@
+/* StatusPage.css */
+.status-container {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .status-paper {
+    padding: 40px 20px;
+    border-radius: 15px;
+  }
+  
+  .status-icon {
+    font-size: 80px;
+  }
+  
+  .status-icon.success {
+    color: #4caf50;
+  }
+  
+  .status-icon.error {
+    color: #f44336;
+  }
+  
+  .status-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

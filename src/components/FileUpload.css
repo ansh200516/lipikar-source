@@ -1,0 +1,128 @@
+/* Styling for upload buttons and dropzone */
+.file-upload-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.upload-type-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.upload-type-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-type-button.active {
+  background-color: #0056b3;
+}
+
+.upload-type-button:hover {
+  background-color: #0056b3;
+}
+
+.dropzone {
+  background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+  border: 2px dashed #007bff;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropzone:hover {
+  background: linear-gradient(145deg, #e9ecef, #f8f9fa);
+  border-color: #0056b3;
+}
+
+.dropzone p {
+  color: #007bff;
+  font-size: 18px;
+}
+
+/* Styling for image and PDF preview and buttons */
+.file-preview-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.file-preview {
+  width: 100%; /* Match the upload box width */
+  max-width: 600px;
+  position: relative;
+}
+
+.preview-image {
+  width: 100%; /* Ensure the image takes full width of the container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-count {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
+  margin-top: 10px;
+}
+
+.nav-button,
+.remove-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover,
+.remove-button:hover {
+  background-color: #0056b3;
+}
+
+.remove-button.center {
+  background-color: #ff4d4d;
+}
+
+.remove-button:hover.center {
+  background-color: #cc0000;
+}
+
+.nav-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+.center {
+  align-self: center;
+}
